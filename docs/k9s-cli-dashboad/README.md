@@ -1,11 +1,12 @@
-k9s is an cli based dashboard tool.
+## k9s - cli based dashboard tool.
 
-Installing k9s:
+### Installing k9s:
 --------------------------------------------
 
 Download the k9s package from https://github.com/derailed/k9s/releases page according to your operating system.
 
-For linux/ x86:
+```
+# For linux/ x86:
 
 wget https://github.com/derailed/k9s/releases/download/v0.22.1/k9s_Linux_x86_64.tar.gz
 
@@ -14,8 +15,11 @@ tar -xzvf k9s_Linux_x86_64.tar.gz
 mv ./k9s /usr/local/bin
 
 chmod +x /usr/loca/bin/k9s
+```
 
 execute "k9s" on the terminal which opens cli dashboard, displays all the options like context, cluster, user, k8s version, k9s version.
+
+### k9s options:
 
 By default it displays the objects in default namespace.
 
