@@ -66,4 +66,4 @@ kind delete cluster
 kind create cluster --name <cluster-name> --config multinode-cluster.yaml
 ```
 
-**Note**: Refer [multinode-cluster.yaml](https://github.com/purushothamkdr453/kubernetes/blob/main/docs/kind/multinode-cluster.yaml
+**Note**: Refer [multinode-cluster.yaml](multinode-cluster.yaml)
