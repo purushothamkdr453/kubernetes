@@ -1,14 +1,14 @@
-# kubeadm manual setup ubunutu OS
+# kubeadm setup in ubunutu OS
 
 
-- [kubeadm manual setup](#kubeadm-manual-setup)
+- [kubeadm setup](#kubeadm-setup)
    - [Overview](#overview)
    - [Pre requisites](#pre-requisities)
    - [Installing kubectl kubeadm docker kubelet components on all nodes](#installing-kubectl-kubeadm-docker-kubelet-components-on-all-nodes)
    - [Master Initialization](#master-initialization)
    - [Worker Initialization](#worker-initialization)
 
-### kubeadm manual setup
+### kubeadm setup
 
 ### Overview
 
