@@ -58,3 +58,4 @@ you can verify the same by running below command.
 
 watch -x kubectl get all
 
+**Note**: Refer to sample files [job-with-ttlSecondsAfterFinished.yml](job-with-ttlSecondsAfterFinished.yml) [job-without-ttlSecondsAfterFinished.yml](job-with-ttlSecondsAfterFinished.yml)
