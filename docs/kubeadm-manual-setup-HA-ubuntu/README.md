@@ -172,7 +172,7 @@ eg:
 kubeadm join 10.0.1.12:6443 --token xv58br.ldsm9t5arj6n0nd8 --discovery-token-ca-cert-hash sha256:5b03b6efd60ce553f9cc2c453c3edbfc36fd276556de6245bb5ea6d9fb2845b3 
 ```
 
-### Adding Addition master nodes using new tokens:
+### Adding Additional master nodes using new tokens:
 
 
 Switch to master-1 node run kubeadm token list. this command will display existing tokens, however these are valid only for certain duration. If you want to add new nodes after sometime then you need to create new token.
