@@ -3,16 +3,16 @@
 
 ### Node Details:
 
-2 master - 2GB RAM, 2 CPU
-1 loadbalancer - 1GB RAM, 1 CPU
-1 worker - 1GB RAM, 1 CPU
+2 master - 2GB RAM, 2 CPU  
+1 loadbalancer - 1GB RAM, 1 CPU  
+1 worker - 1GB RAM, 1 CPU  
 
 ### Add the following Firewall rules to your VPC
 
 Add the following rules to your VPC in which you will be creating k8s clusters.
 
-Ingress - > tcp,udp,icmp,ipip -> from subnet range
-Ingress -> tcp:22,tcp:6443,icmp -> 0.0.0.0/0
+Ingress - > tcp,udp,icmp,ipip -> from subnet range  
+Ingress -> tcp:22,tcp:6443,icmp -> 0.0.0.0/0  
 
 ### Commands that should be executed on loadbalancer node
 
@@ -104,9 +104,11 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
 cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
+
 sudo apt-get update
 
 sudo apt-get install -y kubelet kubeadm kubectl
@@ -119,7 +121,7 @@ systemctl daemon-reload
 systemctl restart kubelet
 ```
 
-**Note:** <version> can be found by running below command.
+**Note:** \<version\> can be found by running below command.
 
 ```
 curl -s https://packages.cloud.google.com/apt/dists/kubernetes-xenial/main/binary-amd64/Packages | grep Version | awk '{print $2}' -> to find out different versions of k8s
