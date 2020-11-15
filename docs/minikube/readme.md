@@ -1,4 +1,4 @@
-# Minikube installation steps:
+# Minikube installation steps & commands:
 
 
 ### Downloading minikube
