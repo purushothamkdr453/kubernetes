@@ -34,10 +34,10 @@ BotKube is a messaging bot for monitoring and debugging Kubernetes clusters. It'
 
 ### Pre-requisities
 
-- kubernetes cluster
-- helm
+- kubernetes cluster  
+- helm  
 
-**kubernetes cluster**
+**kubernetes cluster**  
 you can use any kubernetes cluster, if you want to quickly spin up kubernetes cluster then you can use k3d. commands to install k3d and install the kubernetes cluster using k3d as follows.
 
 ```
@@ -56,7 +56,7 @@ k3d cluster create dev --agents 2
 kubectl get nodes
 ```
 
-**helm installation**
+**helm installation**  
 
 ```
 # Installing Helm on linux
@@ -228,7 +228,7 @@ helm upgrade --version v0.11.0 --name botkube --namespace botkube -f config.yaml
 create a nginx pod to check whether botkube is sending notifications.
 
 ```
-kubectl create -f [nginx-pod-with-out-annotation.yml](nginx-pod-with-out-annotation.yml)
+kubectl create -f nginx-pod-with-out-annotation.yml
 ```
 You would receive a notification about pod creation to slack channel. screenshot below from reference.
 
@@ -242,7 +242,7 @@ annotations:
 ```
 
 ```
-kubectl create -f [nginx-pod-with-annotation.yml](nginx-pod-with-annotation.yml)
+kubectl create -f nginx-pod-with-annotation.yml
 ```
 
 #### Executing kubectl commands from slack channel
